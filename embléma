@@ -1,0 +1,13 @@
+import turtle               # allows us to use the turtles library
+wn = turtle.Screen()        # creates a graphics window
+alex = turtle.Turtle()      # create a turtle named alex
+
+def rajz(szogek_szama, szin):
+    hossz = 100
+    alex.color(szin)
+    for i in range(szogek_szama):
+        alex.forward(hossz)           # tell alex to move forward by 150 units
+        alex.left(360/szogek_szama)
+
+for i in range(3,60):
+    rajz(i,'purple')
